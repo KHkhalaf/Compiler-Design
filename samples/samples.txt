@@ -1,0 +1,22 @@
+create table songs(initials string,track_id string, artist_name string, title string, loudness number, tempo number, time_signature number, key number,mode number,duration number, year number) type ="csv" path ="samples//songs.csv";
+
+create type region( ___name string);
+create type country( __id number, __name string, region region);
+create type city(_id number, _name string, country country);
+
+create table clubs (id number,name string, city city) type="json" path="samples//clubs.json";
+create table countries(id number, name string, code string, post_code string, region string) type="json"  path= "samples//countries.json";
+
+
+create aggregation_function count("samples//commonAggregation.jar","CommonAggregations","Count",number,[number]);
+create aggregation_function avg("samples//commonAggregation.jar","CommonAggregations","Avg",number,[number]);
+create aggregation_function sum("samples//commonAggregation.jar","CommonAggregations","Sum",number,[number]);
+create aggregation_function max("samples//commonAggregation.jar","CommonAggregations","Max",number,[number]);
+create aggregation_function min("samples//commonAggregation.jar","CommonAggregations","Min",number,[number]);
+create aggregation_function stddev("samples//commonAggregation.jar","CommonAggregations","stddev",number,[number]);
+
+fun(){
+
+ var cl = select initials, year, count(duration) from songs where loudness < -5 group by initials, year having count(duration)>3;
+    print(cl);
+    };

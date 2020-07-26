@@ -1,0 +1,94 @@
+{
+	"clubs": [
+		{
+			"id": 1,
+			"name": "Real Madrid",
+			"city": {
+				"_id": 1,
+				"_name": "Madrid",
+				"country": {
+					"__id": 1,
+					"__name": "Spain",
+					"region": {
+						"___name": "Europe"
+					}
+				}
+			}
+		},
+		{
+			"id": 2,
+			"name": "Liverpool",
+			"city": {
+				"_id": 1,
+				"_name": "Liverpool",
+				"country": {
+					"__id": 1,
+					"__name": "England",
+					"region": {
+						"___name": "Europe"
+					}
+				}
+			}
+		},
+		{
+			"id": 3,
+			"name": "Chelsea FC",
+			"city": {
+				"_id": 1,
+				"_name": "London",
+				"country": {
+					"__id": 1,
+					"__name": "England",
+					"region": {
+						"___name": "Europe"
+					}
+				}
+			}
+		},
+		{
+			"id": 13,
+			"name": "Al Wahdeh",
+			"city": {
+				"_id": 1,
+				"_name": "Damascus",
+				"country": {
+					"__id": 1,
+					"__name": "Syria",
+					"region": {
+						"___name": "Asia"
+					}
+				}
+			}
+		},
+		{
+			"id": 20,
+			"name": "Al Ahly",
+			"city": {
+				"_id": 1,
+				"_name": "Cairo",
+				"country": {
+					"__id": 1,
+					"__name": "Egypt",
+					"region": {
+						"___name": "Africa"
+					}
+				}
+			}
+		},
+		{
+			"id": 13,
+			"name": "los angeles galaxy",
+			"city": {
+				"_id": 1,
+				"_name": "los angeles",
+				"country": {
+					"__id": 1,
+					"__name": "USA",
+					"region": {
+						"___name": "America"
+					}
+				}
+			}
+		}
+	]
+}

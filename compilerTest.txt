@@ -1,0 +1,274 @@
+select m,k from u.k where h.k.l !=o and i > 10 and t.y ='sdv';
+select * from (select * from k);
+
+create table users.table1 (
+a primary key unique n ,
+b unique j,
+c
+);
+
+delete from users.table1 where n>10 ;
+
+alter table users.table1 add column col1 primary key unique type;
+alter table users.table1 rename to table2;
+
+insert into users.table1(name1,name2)
+values (b,j,u,1),(f,(5+t)*8);
+
+update users.table1 set 
+col1 = y+6*(h-8) ,
+col2 = s-1
+where f>9;
+
+void fun(int x,var y=i-15){
+var t,m,n=15+x-func(b,9+p);
+for(int i=0;i<b;i++){
+var s="dfbgf";
+if(s!=null){
+s+="isnotNull";
+}
+else if(s=="sss"){
+s+="sas";
+}
+else {
+int u=19;
+s+=u;
+break;
+}
+while(s == null){
+s++;s+="sdfg";
+}
+try{
+s=(15/50)+fun1(x,y);}
+catch(exception ex){
+s=null;
+}
+}
+switch(x){
+case 1 : {
+d+=12;
+break;
+}
+default:{
+r++;
+}
+}
+print("s="+s)
+
+var obj={
+id:1,name:"name1"
+,obj1:{id:2,name:"name2"},
+obj2:["abc","def"]
+};
+array arr[]=[h,d,fg,
+obj:{idgb:1,name:"name1"},
+obj1:{id:1,name:"name1"},expression=(k+98)
+];
+
+
+ var res  = z == 25 ? (xx == "yy" ? "yy" : xx) : (xx == "xx" ? "ff" : "bb");
+};
+
+
+
+
+
+
+////////////////// pre increment + _return _with condition
+void func() {
+  var x = 0;
+  for(var i = 0 ; i < 40 ; i+=5){
+
+    if(i < 9*2){
+      ++x;
+    }
+    else{
+      --x;
+    }
+
+  }
+
+ return 9 < 6 & x > 6;
+};
+
+
+//////////// call _function + _return _with _condition
+void ff() {
+  var x = 5;
+  var y = 6;
+  var z = 7;
+  var sum1 = sum(x,y,z) ;
+
+ return sum1 > sum(x-y,y-x,z-x);
+};
+void  sum(var x,var y,var z){
+  return x+y+z;
+};
+
+
+/////// _default params
+void funcDefault(var a, var x = null){
+
+ var y = true;
+ if(y){
+   y = false;
+ }
+ if(false){
+   print("false");
+  }
+
+return y & true;
+
+};
+
+
+////// _array  + object  + _for + _if
+void gg(){
+
+var arr [] =[1,2,3,4,5,6];
+
+var Obj;
+Obj = {
+      id: 3,
+      name:"THaseen" ,
+      state:{
+            num: 4,
+	    name:"Damascus" ,
+	    country: {
+			 id:33 ,
+			 name:"Syria",
+			 states: ["Damascus", "Aleppo", "Homs"]
+      }
+    }
+};
+
+ for(var i = 0 ; i < 6 ; i++){
+   if(arr[i + 3] == Obj.id){
+       print(Obj.state.num);
+    }
+
+  }
+};
+
+
+///// _while _with one stmt
+
+void hh(){
+
+ var i =0;
+ while(i < 10)
+	if(true)
+          print("true");
+  	else
+          print("false");
+  print("outside _while");
+};
+
+///////////////// _switch + _do _while
+
+void days(){
+     var day = 0;
+            do {
+                switch (day) {
+                    case 1:
+                        print("Monday");
+                        break;
+                    case 2:
+                        print("Tuesday");
+                        break;
+                    case 3:
+                        print("Wednesday");
+                        break;
+                    case 4:
+                        print("Thursday");
+                        break;
+                    case 5:
+                        print("Friday");
+                        break;
+                    case 6:
+                        print("Saturday");
+                        break;
+                    case 7:
+                        print("Sunday");
+                        break;
+                }
+
+            }while (day + 2 < 8);
+        };
+
+
+////////////  _default params + multi level one line condition
+
+void func1(var x, var y,var z= 3 , var xx = "y"){
+
+var c = func(x,y);
+if (c){
+  var res  = z == 25 ? (xx == "yy" ? "yy" : xx) : (xx == "xx" ? "ff" : "bb");
+}
+};
+
+
+ ////////////////////////// SQL ////////////////////////////////
+
+
+///// _delete _from _table
+
+DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+
+////_drop _table
+
+drop table if exists db.tt
+
+
+//// _udpate _stmt
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = (select id from c_id);
+
+////  _normal _insert
+
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+///// _insert _with _select
+
+INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers
+WHERE Country='Germany';
+
+////// _alter _table + _add _primary _key
+
+ALTER TABLE Persons
+ADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);
+
+
+
+
+//// _select _with _subquery  _and _join
+
+select alies.id , name
+from (select id,name from table11)
+ left outer join leftTable
+ on s.id = d.id
+where x in  (select c_id from fee )
+group by columns
+having s(e)< 2
+order by id;
+
+
+//// _create _table _with _constraint
+
+CREATE TABLE Orders (
+    OrderID _int NOT NULL,
+    OrderNumber _int NOT NULL,
+    PersonID _int,
+    PRIMARY KEY (OrderID),
+    CONSTRAINT UC_Person UNIQUE (OrderID),
+    CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID) on delete set null
+);
+
+
+
+

@@ -1,0 +1,46 @@
+{
+	"countries": [
+		{
+			"id": 1,
+			"name": "Syrian Arab Republic",
+			"code": "SY",
+			"post_code": "+963",
+			"region": "Asia"
+		},
+		{
+			"id": 2,
+			"name": "Lebanon",
+			"code": "LB",
+			"post_code": "+961",
+			"region": "Asia"
+		},
+		{
+			"id": 13,
+			"name": "Turkey",
+			"code": "TR",
+			"post_code": "+90",
+			"region": "Asia & Europe"
+		},
+		{
+			"id": 40,
+			"name": "Malaysia",
+			"code": "ML",
+			"post_code": "+60",
+			"region": "Asia"
+		},
+		{
+			"id": 15,
+			"name": "Egypt",
+			"code": "EG",
+			"post_code": "+20",
+			"region": "Africa"
+		},
+		{
+			"id": 6,
+			"name": "Spain",
+			"code": "ES",
+			"post_code": "+34",
+			"region": "Europe"
+		}
+	]
+}
